@@ -16,7 +16,7 @@ function comprar() {
     let quantidadeDisponivelInferior = document.getElementById('qtd-inferior');
 
     // Mensagem a ser exibida caso a quantidade solicitada seja maior do que a disponível
-    let ingressosIndisponiveis = 'Não há ingressos disponíveis o suficiente.';
+    let ingressosIndisponiveis = `quantidade indisponível para ${tipoIngresso}`;
 
     // Verificando se a quantidade solicitada excede a quantidade disponível para o tipo de ingresso selecionado
     if(tipoIngresso == 'pista' && quantidadeIngresso > pista){
